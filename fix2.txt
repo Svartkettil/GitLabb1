@@ -39,3 +39,32 @@ $ git remote add origin https://github.com/Svartkettil/GitLabb1.git
 $ git branch -M main
 $ git push -u origin main
 $ notepad fix2.txt
+$ git commit -a -m "add commands to fix2.txt"
+$ git push -u origin main
+$ git push -u origin feature1
+$ git push -u origin feature2
+$ git push origin extinct
+$ touch .gitignore
+$ notepad .gitignore
+$ git add .gitignore
+$ git commit -a -m "add gitignore"
+$ git push -u origin main
+$ git tag -a v1.0 -m "Version 1.0"
+$ git push origin v1.0
+$ git rebase -i HEAD~3
+pick baf9358 add fix2.txt file
+squash a218acf add commands to fix2.txt
+pick 2cebd63 add gitignore
+$ git switch -c feature3
+$ notepad fix2.txt
+$ git switch main
+$ git switch feature3
+$ notepad .\fix2.txt
+$ git switch main
+$ git merge --no-ff feature3
+$ git switch feature3
+$ git commit -a -m "update fix2.txt commands"
+$ git switch main
+$ git merge --no-ff feature3
+$ git push -u origin feature3
+$ git push -u origin main --force
