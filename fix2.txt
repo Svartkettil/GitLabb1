@@ -1,0 +1,41 @@
+$ cd C:/Users/mauri/Desktop/Java/GitLaboration1
+$ git init
+$ touch README.md
+$ notepad README.md
+$ git add README.md
+$ git commit -m "Initial commit"
+$ git branch feature1
+$ git switch feature1
+$ notepad README.md
+$ git add README.md
+$ git commit -m "add dog, change moose to mouse"
+$ git switch master
+$ git branch -m "main"
+$ notepad README.md
+$ git add README.md
+$ git commit -m "change moose to mahmut"
+$ git merge feature1
+$ notepad README.md
+$ git add README.md
+$ git commit -m "merge feature1 into main"
+$ git tag extinct
+$ git reset --hard HEAD^
+$ notepad README.md
+$ git branch feature2
+$ notepad README.md
+$ git add README.md
+$ git commit -m "change first letter to upper case"
+$ git switch feature2
+$ touch fix1.txt
+$ git add fix1.txt
+$ git commit -m "add fix1.txt file"
+$ touch fix2.txt
+$ git add fix2.txt
+$ git commit -m "add fix2.txt file"
+$ git config --global alias.graph  'log --all --decorate --graph --oneline'
+$ git graph
+$ git cherry-pick 032ad20
+$ git remote add origin https://github.com/Svartkettil/GitLabb1.git
+$ git branch -M main
+$ git push -u origin main
+$ notepad fix2.txt
